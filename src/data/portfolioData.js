@@ -7,18 +7,13 @@ export const portfolio = {
     valueProposition: 'Analyst and product thinker working across predictive modeling, market strategy, and AI-enabled prototypes.',
     location: 'Los Angeles, CA',
     availability: 'Open to analytics & strategy roles',
-    email: 'your.email@usc.edu', // Replace once before publishing.
+    email: 'gunadhi@marshall.usc.edu',
     social: {
-      github: 'https://github.com/your-username',
-      linkedin: 'https://www.linkedin.com/in/your-handle/',
+      github: 'https://github.com/gunadhiv',
+      linkedin: 'https://www.linkedin.com/in/viviennegunadhi/',
     },
   },
-  metrics: [
-    { value: '13', label: 'projects selected' },
-    { value: '100K', label: 'patient records analyzed' },
-    { value: '2,912', label: 'videos modeled' },
-    { value: '$300M', label: 'portfolio optimized' },
-  ],
+
   about: {
     heading: 'Analytics With a Point of View.',
     paragraphs: [
