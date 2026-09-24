@@ -20,7 +20,7 @@ export const portfolio = {
       'I am an MS Business Analytics student at USC Marshall who enjoys the stretch between rigorous analysis and a clear business recommendation. My work spans regression, stochastic optimization, SQL, market entry, and rapid product prototyping.',
       'I care about traceable assumptions, honest limitations, and communicating results in a form that a decision-maker can act on. The projects below show both the model and the story around it.',
     ],
-    skills: ['Python', 'SQL', 'R', 'Tableau', 'Excel + @RISK', 'LLMs', 'PyTorch', 'React', 'Data Storytelling'],
+    skills: ['Python', 'SQL', 'Tableau', 'Excel + @RISK', 'LLMs', 'Data Storytelling'],
   },
   categories: ['All work', 'Data Analytics', 'Case Competitions', 'Vibe Coding'],
 }
