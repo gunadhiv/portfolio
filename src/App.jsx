@@ -83,15 +83,11 @@ function ProjectCard({ project, onOpen, index }) {
   return (
     <motion.article {...fadeUp} transition={{ ...fadeUp.transition, delay: Math.min(index * 0.04, 0.2) }} className={`project-card ${project.featured ? 'featured' : ''}`}>
       <button className="card-hit" onClick={() => onOpen(project)} aria-label={`View ${project.title} case study`} />
-      <div className="project-image"><ProjectVisual project={project} /><span className="year-chip">{project.year}</span></div>
       <div className="project-body">
-        <div className="card-topline"><span className="category-pill">{project.category}</span><span className="status-text">{project.status}</span></div>
+        <div className="card-topline"><span className="category-pill">{project.category}</span><span className="status-text">{project.year}</span></div>
         <h3>{project.title}</h3><p className="project-subtitle">{project.subtitle}</p>
         <p className="project-summary">{project.summary}</p>
-        <div className="impact-row">
-          {project.impact.slice(0, 3).map((item) => <div key={item.label}><strong>{item.value}</strong><small>{item.label}</small></div>)}
-        </div>
-        <div className="card-footer"><div className="tech-preview">{project.tech.slice(0, 3).map((tech) => <span key={tech}>{tech}</span>)}</div><ChevronRight size={20} /></div>
+        <div className="card-footer"><span className="status-text">{project.status}</span><span className="card-open">View project <ChevronRight size={16} /></span></div>
       </div>
     </motion.article>
   )
