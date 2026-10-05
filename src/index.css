@@ -3,9 +3,9 @@
 @tailwind utilities;
 
 :root {
-  --bg: #f8f7fb; --surface: #ffffff; --surface-2: #eeeaf7; --ink: #252332;
-  --muted: #656171; --line: #ded9e8; --accent: #665099; --accent-2: #e3dcf7;
-  --shadow: 0 12px 36px rgba(65, 45, 95, .08); --radius: 16px;
+  --bg: #edf2fb; --surface: #ffffff; --surface-2: #e2eafc; --ink: #1e304f;
+  --muted: #4f607a; --line: #ccdbfd; --accent: #34568c; --accent-2: #c1d3fe;
+  --shadow: 0 12px 36px rgba(30, 48, 79, .08); --radius: 16px;
 }
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
@@ -60,9 +60,9 @@ footer { min-height: 100px; display: flex; justify-content: space-between; align
 /* Restrained Deta-inspired styling and compact project index. */
 body { font-family: Manrope, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
 body::before { display: none; }
-main { background: radial-gradient(ellipse 70% 550px at 65% 120px, #eae1f9 0%, transparent 80%); }
+main { background: radial-gradient(ellipse 70% 550px at 65% 120px, #d7e3fc 0%, transparent 80%); }
 section[id] { scroll-margin-top: 104px; }
-.site-header { max-width: 1180px; height: 64px; border-radius: 18px; box-shadow: 0 4px 20px #30204305; }
+.site-header { max-width: 1180px; height: 64px; border-radius: 18px; box-shadow: 0 4px 20px #1e304f05; }
 .monogram { background: var(--surface-2); color: var(--accent); border-radius: 12px; }
 .hero { min-height: auto; padding: 84px 0 96px; gap: 80px; }
 .hero h1 { font-family: inherit; font-weight: 600; font-size: clamp(38px, 4.5vw, 60px); line-height: 1.12; letter-spacing: -.045em; text-wrap: balance; }
@@ -83,22 +83,26 @@ section[id] { scroll-margin-top: 104px; }
 .work-heading p { font-size: 14px; }
 .filter-row { margin: 32px 0 24px; gap: 6px; }
 .filter-row button { border-radius: 10px; padding: 10px 14px; }
-.filter-row button.active { background: var(--accent-2); color: #473269; }
+.filter-row button.active { background: var(--accent-2); color: var(--ink); }
 .project-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
 .project-card, .project-card.featured:first-child { grid-column: auto; display: flex; min-width: 0; background: var(--surface); border-radius: 16px; }
-.project-card:hover { transform: translateY(-3px); border-color: #b9a6d7; box-shadow: var(--shadow); }
+.project-card:hover { transform: translateY(-3px); border-color: #abc4ff; box-shadow: var(--shadow); }
 .project-body { padding: 22px; width: 100%; display: flex; flex-direction: column; }
 .category-pill { font-size: 10px; letter-spacing: .035em; line-height: 1.5; }
 .status-text { font-size: 11px; }
 .project-body h3 { font: 600 20px/1.25 Manrope, sans-serif; margin: 20px 0 8px; letter-spacing: -.025em; overflow-wrap: anywhere; }
 .project-subtitle { font-size: 12px; line-height: 1.5; }
 .project-summary { font-size: 13px; line-height: 1.65; min-height: 0; margin: 14px 0 20px; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
-.card-footer { margin-top: auto; padding-top: 16px; border-top: 1px solid #eeeaf3; gap: 12px; }
+.card-footer { margin-top: auto; padding-top: 16px; border-top: 1px solid #e2eafc; gap: 12px; }
 .card-footer .status-text { text-align: left; }
 .card-open { display: inline-flex; align-items: center; white-space: nowrap; gap: 4px; font-size: 11px; color: var(--accent); }
 .card-hit:focus-visible { outline: 3px solid var(--accent); outline-offset: -4px; border-radius: 16px; }
-a:focus-visible, button:focus-visible { outline: 3px solid #9373c4; outline-offset: 3px; }
-.contact-section { background: #292336; padding: 80px 0; }
+a:focus-visible, button:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+.button.secondary:hover, .filter-row button:not(.active):hover { background: #d7e3fc; }
+.filter-row button.active:hover { background: #b6ccfe; }
+.contact-section { background: #1e304f; padding: 80px 0; }
+.contact-section .section-label span { color: #abc4ff; }
+.contact-section .status-dot { background: #abc4ff; }
 .contact-grid { gap: 60px; }
 .contact-link strong { overflow-wrap: anywhere; min-width: 0; }
 .modal-visual { height: auto; padding: 54px 20px 20px; background: var(--surface-2); }
