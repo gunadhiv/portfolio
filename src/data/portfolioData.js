@@ -37,7 +37,7 @@ export const projects = [
     image: '/projects/tixr.jpg',
     summary: 'Built a venue intelligence prototype and market-entry strategy to prioritize TIXR’s expansion, starting in East and Southeast Asia.',
     impact: [{ value: '3', label: 'priority markets' }, { value: '200+', label: 'venues / country' }, { value: '4-Stage', label: 'Scoring pipeline' }],
-    tech: ['Python', 'Claude', 'Scoring model'],
+    tech: ['Python', 'Streamlit', 'Claude', 'Scoring model', 'Market research'],
     problem: 'TIXR needed a repeatable way to compare international markets and identify venue-level sales targets before committing expansion resources.',
     methodology: 'Combined country-level market sizing with a venue pipeline. The prototype geocodes and deduplicates venues, enriches them through an LLM, then applies traceable exclusivity, premium-fit, and activity scores.',
     findings: ['Taiwan offered the simplest first launch and 200 high-opportunity venues.', 'The recommended sequence was Taiwan, Thailand, followed by the Philippines after the playbook matured.', 'Human validation remains essential because API coverage and inferred venue attributes vary by market.'],
@@ -59,16 +59,24 @@ export const projects = [
     status: 'Course Project',
     image: '/projects/film-risk.jpg',
     summary: 'Optimized a studio’s horror and animation slate under a $300M budget, incorporating revenue uncertainty, self-cannibalization, and downside risk.',
-    impact: [{ value: '804', label: 'films modeled' }, { value: '2-stage', label: 'optimization' }, { value: '$300M', label: 'budget cap' }],
+    impact: [{ value: '804', label: 'films modeled' }, { value: '2-stage', label: 'optimization' }, { value: '12 films', label: 'risk-adjusted portfolio' }],
     tech: ['Excel', '@RISK', 'Monte Carlo Method', 'Stochastic Optimization'],
     problem: 'A fictional studio needed to choose how many horror and animation projects to greenlight for the next year.',
     methodology: 'Fit lognormal distributions across six genre-budget segments, weighted recent films more heavily, then used two-stage stochastic optimization with a 5% saturation penalty and a CVaR risk adjustment.',
-    findings: ['The first-stage solution funded 16 films with a $299.8M allocation.', 'After risk adjustments, the portfolio shifted from low-budget horror volume toward medium-budget animation.', 'The analysis recommends treating the model as an annual decision aid and refreshing the distributions with current releases.'],
+    findings: [
+  'The initial optimization allocated $299.8M across 16 films.',
+  'After incorporating audience cannibalization and downside risk, the model reduced the recommendation to a more diversified 12-film portfolio.',
+  'The risk-adjusted strategy capped low-budget horror at five films and redirected capacity toward higher-upside animation investments.',
+],
     visualCaption: 'Second stage model description from the film portfolio risk model.',
     links: [
   {
-    label: 'View Case Deck',
+    label: 'View Slide Deck',
     url: '/documents/film-deck.pdf',
+  },
+  {
+    label: 'View Report',
+    url: '/documents/film-report.pdf',
   }
   ], 
   },
@@ -91,7 +99,7 @@ export const projects = [
   'Industry evidence indicates potential reductions of 10–15% in operating-room time, 10–20% in postoperative complications, and 30–40% in training costs.',
   'Training represents the most practical near-term entry point, while broader clinical adoption depends on reimbursement, clinical evidence, and EHR integration.',
 ],
-    visualCaption: 'Adoption scenarios presented in the XR strategy deck.',
+    visualCaption: 'Adoption scenarios presented in the XR overview deck.',
     links: [{
     label: 'View Slide Deck',
     url: '/documents/XR-deck.pdf',
