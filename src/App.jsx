@@ -117,16 +117,16 @@ function ProjectCard({ project, onOpen, index }) {
 }
 
 function Projects({ onOpen }) {
-<img
-  src="/projects/campus-banner.png"
-  alt="Campus architecture at dusk"
-  loading="lazy"
-  className="mb-10 h-auto w-full rounded-xl"
-/>
   const [filter, setFilter] = useState('All work')
   const visible = useMemo(() => filter === 'All work' ? projects : projects.filter((project) => project.category === filter), [filter])
   return (
     <section id="work" className="section-shell work-section">
+      <img
+        src="/projects/campus-banner.png"
+        alt="Campus architecture at dusk"
+        loading="lazy"
+        className="mb-10 h-auto w-full rounded-xl"
+      />
       <motion.div {...fadeUp} className="work-heading">
         <div className="section-label"><span>02</span> Selected work</div>
         <div><h2>Models, Markets, and Products.</h2><p>Click any project for the question, method, findings, and source visual.</p></div>
