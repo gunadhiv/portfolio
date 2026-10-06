@@ -235,7 +235,7 @@ export const projects = [
   {
     id: 'SquadTrip',
     title: 'SquadTrip',
-    subtitle: 'Group trip planning that wrangles the friends for you',
+    subtitle: 'Group trip pre-planner that wrangles the friends for you',
 category: 'Vibe Coding',
 year: '2026', 
 featured: false,
