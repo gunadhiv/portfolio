@@ -151,7 +151,7 @@ export const projects = [
   {
     id: 'onebasa',
     title: 'OneBASA',
-    subtitle: 'A community platform for USC MSBA',
+    subtitle: '6th Annual Global USC MS Business Analytics AI Case Competition',
     category: 'Case Competitions',
     year: '2025',
     featured: false,
