@@ -64,6 +64,29 @@ function About() {
         <div className="about-copy">
           {portfolio.about.paragraphs.map((text) => <p key={text}>{text}</p>)}
           <div className="skill-list">{portfolio.about.skills.map((skill) => <span key={skill}>{skill}</span>)}</div>
+<div className="beyond-analytics">
+  <h3>Beyond analytics</h3>
+
+  <div className="interests-grid">
+    {portfolio.about.interests.map((interest) => (
+      <div key={interest.title}>
+        <h4>{interest.title}</h4>
+        <p>{interest.text}</p>
+      </div>
+    ))}
+  </div>
+
+  {portfolio.about.letterboxd?.url && (
+    <a
+      className="letterboxd-link"
+      href={portfolio.about.letterboxd.url}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      {portfolio.about.letterboxd.label}
+    </a>
+  )}
+</div>
         </div>
       </motion.div>
     </section>
@@ -94,6 +117,12 @@ function ProjectCard({ project, onOpen, index }) {
 }
 
 function Projects({ onOpen }) {
+<img
+  src="/projects/campus-banner.png"
+  alt="Campus architecture at dusk"
+  loading="lazy"
+  className="mb-10 h-auto w-full rounded-xl"
+/>
   const [filter, setFilter] = useState('All work')
   const visible = useMemo(() => filter === 'All work' ? projects : projects.filter((project) => project.category === filter), [filter])
   return (
