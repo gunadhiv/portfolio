@@ -42,8 +42,8 @@ letterboxd: {
 export const projects = [
   {
     id: 'tixr-pulse',
-    title: 'TIXR Pulse',
-    subtitle: 'Venue intelligence for global market entry',
+    title: 'Tixr Pulse',
+    subtitle: 'Tixr x USC 2nd Annual Case Competition',
     category: 'Case Competitions',
     year: '2026',
     featured: true,
