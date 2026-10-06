@@ -296,7 +296,7 @@ links: [{ label: 'Live prototype', url: 'https://dreamsquadtrip.lovable.app/' },
   }],
   },
   {
-    {
+    
   id: 'patient-segmentation',
   title: 'Synthetic EHR Analysis',
   subtitle: 'Hospital outcomes among adults aged 45–64',

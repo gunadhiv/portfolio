@@ -117,8 +117,14 @@ function ProjectCard({ project, onOpen, index }) {
 }
 
 function Projects({ onOpen }) {
-  const [filter, setFilter] = useState('All work')
-  const visible = useMemo(() => filter === 'All work' ? projects : projects.filter((project) => project.category === filter), [filter])
+  const [filter, setFilter] = useState('All Work')
+  const visible = useMemo(
+  () =>
+    filter === 'All Work'
+      ? projects
+      : projects.filter((project) => project.category === filter),
+  [filter]
+)
   return (
     <section id="work" className="section-shell work-section">
       <img
