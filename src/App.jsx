@@ -126,7 +126,7 @@ function Projects({ onOpen }) {
   [filter]
 )
   return (
-    <section id="work" className="section-shell work-section">
+    <section id="projects" className="section-shell work-section">
       <img
         src="/projects/campus-banner.png"
         alt="Campus architecture at dusk"
