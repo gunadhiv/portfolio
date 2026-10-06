@@ -15,7 +15,7 @@ const fadeUp = {
 
 function Nav() {
   const [open, setOpen] = useState(false)
-  const links = ['About', 'Work', 'Contact']
+  const links = ['About', 'Projects', 'Contact']
   return (
     <header className="site-header">
       <a href="#top" className="monogram" aria-label="Back to top">VG</a>
@@ -38,7 +38,7 @@ function Hero() {
         <h1>{profile.title}</h1>
         <p className="hero-lede">{profile.valueProposition}</p>
         <div className="hero-actions">
-          <a href="#work" className="button primary">Explore selected work <ArrowDown size={16} /></a>
+          <a href="#projects" className="button primary">Explore selected projects <ArrowDown size={16} /></a>
           <a href={`mailto:${profile.email}`} className="button secondary">Start a conversation <ArrowRight size={16} /></a>
         </div>
         <div className="social-row">
@@ -134,7 +134,7 @@ function Projects({ onOpen }) {
         className="mb-10 h-auto w-full rounded-xl"
       />
       <motion.div {...fadeUp} className="work-heading">
-        <div className="section-label"><span>02</span> Selected work</div>
+        <div className="section-label"><span>02</span> Selected Projects</div>
         <div><h2>Models, Markets, and Products.</h2><p>Click any project for the question, method, findings, and source visual.</p></div>
       </motion.div>
       <motion.div {...fadeUp} className="filter-row" role="tablist" aria-label="Project categories">
