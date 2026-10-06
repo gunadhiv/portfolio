@@ -65,7 +65,7 @@ function About() {
           {portfolio.about.paragraphs.map((text) => <p key={text}>{text}</p>)}
           <div className="skill-list">{portfolio.about.skills.map((skill) => <span key={skill}>{skill}</span>)}</div>
 <div className="beyond-analytics">
-  <h3>Beyond analytics</h3>
+  <h3>Beyond Analytics</h3>
 
   <div className="interests-grid">
     {portfolio.about.interests.map((interest) => (
