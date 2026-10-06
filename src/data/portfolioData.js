@@ -332,7 +332,7 @@ findings: [
   year: '2026',
   featured: false,
   status: 'Course Team Project',
-  image: '/projects/rpg.jpg'
+  image: '/projects/rpg.jpg',
   summary: 'Analyzed early player behavior in an Android squad RPG to explore retention patterns and develop interpretable engagement segments.',
   impact: [
     { value: '4', label: 'spending–retention segments' },
